@@ -19,16 +19,40 @@ export default function Quotes() {
   if (!data) return <div> loading... </div>;
 
   return (
-    <section>
-      <h1> Random Quotes </h1>
-      <blockquote>
-        {data.data[count].text}
-        <address>
-          <a rel="author">{data.data[count].author} </a>
-        </address>
-      </blockquote>
-      <Image src="/CarbonQuotesBig.png" width="828px" height="572px" />
-      <button onClick={randomQuote}>Random </button>
+    <section className={styles.quotes}>
+      <div className={styles.codeImageContainer}>
+        <Image
+          className={styles.codeImage}
+          src="/CarbonQuotesBig.png"
+          width="828px"
+          height="572px"
+        />
+      </div>
+      <div className={styles.quoteMainContainer}>
+        <div className={styles.quoteContainerTitle}>
+          <h1> Random Quotes </h1>
+        </div>
+        <div className={styles.quoteContainerContent}>
+          {data.data[count].text}
+          <br />
+          <br />
+          <address>
+            by{" "}
+            <a rel="author">
+              <strong>
+                <i>
+                  {data.data[count].author
+                    ? data.data[count].author
+                    : "author unknown"}
+                </i>
+              </strong>{" "}
+            </a>
+          </address>
+          <button className={styles.randomBtn} onClick={randomQuote}>
+            Random{" "}
+          </button>
+        </div>
+      </div>
     </section>
   );
 }

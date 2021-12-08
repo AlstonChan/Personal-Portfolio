@@ -1,0 +1,117 @@
+.quotes {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  justify-content: center;
+}
+
+.codeImage {
+  border-radius: 25px;
+}
+
+.quoteMainContainer {
+  margin-left: 30px;
+  align-self: center;
+}
+
+.quoteContainerTitle {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 35px;
+}
+
+.quoteContainerTitle > h1 {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.quoteContainerContent {
+  margin-top: 25px;
+  min-height: 200px;
+  max-width: 600px;
+  min-width: 450px;
+  padding: 20px;
+  font-size: 1.3rem;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 40px;
+}
+
+.randomBtn {
+  margin-top: 15px;
+  padding: 10px 25px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.315);
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.363);
+  backdrop-filter: blur(5px);
+  color: #fff;
+  cursor: pointer;
+}
+
+/*media quries at 1180px*/
+@media screen and (max-width: 1180px) {
+  .quotes {
+    flex-direction: column;
+    margin: 40px;
+  }
+  .codeImageContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .quoteMainContainer {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .quotes {
+    margin: 30px;
+  }
+  .quoteContainerTitle > h1 {
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+
+  .quoteContainerContent {
+    min-width: 0;
+    font-size: 1rem;
+
+    border-radius: 30px;
+  }
+
+  .randomBtn {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .quotes {
+    margin: 20px;
+  }
+  .quoteContainerTitle > h1 {
+    padding: 10px;
+    font-size: 1.3rem;
+  }
+
+  .quoteContainerContent {
+    min-width: 0;
+    font-size: 1rem;
+
+    border-radius: 30px;
+  }
+
+  .randomBtn {
+    font-size: 1rem;
+  }
+}
