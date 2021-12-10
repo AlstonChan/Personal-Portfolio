@@ -17,14 +17,24 @@ export default function Footer() {
           rel="noreferrer nofollow"
           target="_blank"
         >
-          <Image src="/Facebook.svg" width="50px" height="50px" />
+          <Image
+            src="/Facebook.svg"
+            width="50px"
+            height="50px"
+            alt="Facebook Icon"
+          />
         </a>
         <a
           href="https://github.com/AlstonChan"
           rel="noreferrer nofollow"
           target="_blank"
         >
-          <Image src="/Github.svg" width="50px" height="50px" />
+          <Image
+            src="/Github.svg"
+            width="50px"
+            height="50px"
+            alt="Github Icon"
+          />
         </a>
         <button
           onClick={() => {
@@ -38,6 +48,7 @@ export default function Footer() {
             src="/Discord.svg"
             width="50px"
             height="50px"
+            alt="Discord Icon"
           />
         </button>
         <div

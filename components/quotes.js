@@ -26,6 +26,7 @@ export default function Quotes() {
           src="/CarbonQuotesBig.png"
           width="828px"
           height="572px"
+          alt="Sample code of the random quote api"
         />
       </div>
       <div className={styles.quoteMainContainer}>

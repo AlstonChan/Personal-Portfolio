@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <title>Chan Alston</title>
         {/* <!-- Primary Meta Tags --> */}
-        <title>Alston's Personal Portfolio</title>
+        <title>Alston&apos;s Personal Portfolio</title>
         <meta name="title" content="Alston's Personal Portfolio" />
         <meta
           name="description"
@@ -37,16 +37,6 @@ export default function Home() {
         <meta property="twitter:image" content="/meta tags img.png" />
 
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="True"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <div className="backContainer">
         <Quotes />
