@@ -1,19 +1,52 @@
 import styles from "../styles/footer.module.css";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Footer() {
+  const [toggleModal, setToggleModal] = useState(false);
+
+  if (toggleModal === true) {
+    setTimeout(() => setToggleModal(false), 5000);
+  }
+
   return (
     <footer className={styles.footer}>
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by{" "}
-        <span className={styles.logo}>
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </span>
-      </a>
+      <div>
+        <a
+          href="https://www.facebook.com/profile.php?id=100008623459238"
+          rel="noreferrer nofollow"
+          target="_blank"
+        >
+          <Image src="/Facebook.svg" width="50px" height="50px" />
+        </a>
+        <a
+          href="https://github.com/AlstonChan"
+          rel="noreferrer nofollow"
+          target="_blank"
+        >
+          <Image src="/Github.svg" width="50px" height="50px" />
+        </a>
+        <button
+          onClick={() => {
+            setToggleModal(true);
+
+            navigator.clipboard.writeText("Firemonster391#1331");
+          }}
+        >
+          <Image
+            className={styles.disBtn}
+            src="/Discord.svg"
+            width="50px"
+            height="50px"
+          />
+        </button>
+        <div
+          className={`${styles.modal} ${toggleModal ? styles.modalShow : ""}`}
+        >
+          <p>Copied !</p>
+        </div>
+      </div>
+      <p>Copyright © 2021 chanalston</p>
     </footer>
   );
 }
