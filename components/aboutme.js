@@ -7,7 +7,7 @@ export default function Aboutme() {
       <div className={styles.iconGroup}>
         <div className={styles.iconSquare}>
           <Image
-            src="/HTML5.png"
+            src="/Html5.png"
             width="130px"
             height="130px"
             alt="HTML5 Logo"
