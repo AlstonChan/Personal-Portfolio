@@ -60,6 +60,11 @@
   cursor: pointer;
 }
 
+.loadingContent {
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
 /*media quries at 1180px*/
 @media screen and (max-width: 1180px) {
   .quotes {
