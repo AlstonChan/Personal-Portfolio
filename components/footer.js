@@ -57,7 +57,7 @@ export default function Footer() {
           <p>Copied !</p>
         </div>
       </div>
-      <p>Copyright © 2021 chanalston</p>
+      <p>Copyright © 2022 chanalston</p>
     </footer>
   );
 }

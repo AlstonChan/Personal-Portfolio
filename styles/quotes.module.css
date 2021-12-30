@@ -58,6 +58,12 @@
   backdrop-filter: blur(5px);
   color: #fff;
   cursor: pointer;
+  transition: background-color 120ms ease-in-out, color 140ms ease-in-out;
+}
+
+.randomBtn:hover {
+  color: rgba(0, 0, 0, 0.678);
+  background-color: #ffffffab;
 }
 
 .loadingContent {
