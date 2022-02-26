@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CarbonQuotes from "../public/CarbonQuotes.png";
 
 import styles from "../styles/quotes.module.css";
 import { useState } from "react";
@@ -17,10 +18,8 @@ export default function Quotes({ data }) {
       <div className={styles.codeImageContainer}>
         <Image
           className={styles.codeImage}
-          src="/CarbonQuotesBig.png"
+          src={CarbonQuotes}
           alt="Sample code of the random quote api"
-          width="828px"
-          height="572px"
           priority
         />
       </div>

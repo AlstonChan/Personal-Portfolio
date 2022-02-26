@@ -1,47 +1,66 @@
 .aboutme {
   display: flex;
   flex-direction: row;
-  margin: 30px 50px 0 50px;
+  margin: 30px auto 0 auto;
   justify-content: center;
+  max-width: 1500px;
+}
+
+.skillSet {
+  width: 55%;
+}
+
+.skillTitle {
+  text-align: center;
+  margin: 0;
+  font-size: 1.8rem;
 }
 
 .iconGroup {
-  max-width: 800px;
-  padding: 30px 60px;
+  position: relative;
+  padding: 0 60px 30px 60px;
+}
+
+.iconRow {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
+}
+
+.logoItem {
+  padding: 10px 15px;
 }
 
 .iconGroup > * {
   flex-shrink: 1;
 }
 
-.iconLong {
-  padding: 0 10px;
+.iconSquare {
+  max-width: 120px;
+  line-height: 0;
+}
+
+.logoCap {
+  margin: 5px 0;
+  text-align: center;
 }
 
 .nameIntro {
-  max-width: 680px;
+  width: 45%;
+  padding-right: 50px;
 }
 
-.nameIntro > h1 {
-  font-size: 10rem;
+.headingMain {
+  font-size: clamp(2.5rem, 8vw + 1rem, 9rem);
   margin: 0;
   text-align: end;
 }
 
-.nameIntro > p {
+.headingStr {
   font-size: 2rem;
   margin: 0;
   padding-right: 20px;
   text-align: end;
-}
-
-@media screen and (max-width: 1350px) {
-  .nameIntro > h1 {
-    font-size: 7.5rem;
-  }
 }
 
 @media screen and (max-width: 1180px) {
@@ -49,19 +68,45 @@
     flex-direction: column-reverse;
     align-items: center;
   }
-  .nameIntro > h1 {
-    font-size: clamp(2.5rem, 10vw + 1rem, 9rem);
+  .skillSet {
+    width: 100%;
+  }
+  .skillTitle {
+    margin-top: 20px;
+  }
+  .nameIntro {
+    width: 450px;
+  }
+  .headingMain {
+    font-size: 6rem;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .aboutme {
-    margin: 30px 30px 0 30px;
+    margin: 0;
   }
-  .nameIntro > h1 {
-    font-size: clamp(2.5rem, 10vw + 1rem, 9rem);
+  .iconGroup {
+    position: relative;
+    padding: 0 30px 20px 30px;
   }
-  .nameIntro > p {
-    font-size: 1.3rem;
+  .iconRow {
+    flex-wrap: wrap;
+  }
+  .iconSquare {
+    max-width: 75px;
+  }
+  .nameIntro {
+    width: 100%;
+    padding: 10px 40px;
+  }
+  .headingMain {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .headingMain {
+    font-size: 4rem;
   }
 }

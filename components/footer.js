@@ -1,4 +1,5 @@
 import styles from "../styles/footer.module.css";
+
 import Image from "next/image";
 import { useState } from "react";
 
@@ -15,7 +16,6 @@ export default function Footer() {
         <a
           href="https://www.facebook.com/profile.php?id=100008623459238"
           rel="noreferrer nofollow"
-          target="_blank"
         >
           <Image
             src="/Facebook.svg"
@@ -24,11 +24,7 @@ export default function Footer() {
             alt="Facebook Icon"
           />
         </a>
-        <a
-          href="https://github.com/AlstonChan"
-          rel="noreferrer nofollow"
-          target="_blank"
-        >
+        <a href="https://github.com/AlstonChan" rel="noreferrer nofollow">
           <Image
             src="/Github.svg"
             width="50px"

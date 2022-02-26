@@ -6,6 +6,10 @@
   justify-content: center;
 }
 
+.codeImageContainer {
+  max-width: 700px;
+}
+
 .codeImage {
   border-radius: 25px;
 }
@@ -21,7 +25,7 @@
   backdrop-filter: blur(5px);
   /* Note: backdrop-filter has minimal browser support */
 
-  border-radius: 35px;
+  border-radius: 20px;
 }
 
 .quoteContainerTitle > h1 {
@@ -44,7 +48,7 @@
   backdrop-filter: blur(5px);
   /* Note: backdrop-filter has minimal browser support */
 
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 .randomBtn {
@@ -78,6 +82,7 @@
     margin: 0 40px;
   }
   .codeImageContainer {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
   }
@@ -98,12 +103,10 @@
   .quoteContainerContent {
     min-width: 0;
     font-size: 1rem;
-
-    border-radius: 30px;
   }
 
   .randomBtn {
-    font-size: 1rem;
+    margin-top: 15px;
   }
 }
 
