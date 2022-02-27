@@ -2,6 +2,7 @@ import Head from "next/head";
 import axios from "axios";
 import Quotes from "../components/quotes";
 import Aboutme from "../components/aboutme";
+import Portfolio from "../components/portfolio";
 import Footer from "../components/footer";
 import HeadCom from "../components/head";
 
@@ -19,6 +20,7 @@ export default function Home({ data }) {
           <Aboutme />
         </div>
       </div>
+      <Portfolio />
       <Footer />
     </>
   );

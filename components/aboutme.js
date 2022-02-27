@@ -30,41 +30,44 @@ const logosTwo = [
 
 export default function Aboutme() {
   return (
-    <article className={styles.aboutme}>
-      <div className={styles.skillSet}>
-        <h2 className={styles.skillTitle}>What I Know</h2>
-        <div className={styles.iconGroup}>
-          <hr />
-          <div className={styles.iconRow}>
-            {logosOne.map((logo, index) => {
-              return (
-                <div className={styles.logoItem} key={index}>
-                  <div className={styles.iconSquare}>
-                    <Image src={logo.img} />
+    <>
+      <article className={styles.aboutme}>
+        <div className={styles.skillSet}>
+          <h2 className={styles.skillTitle}>What I Know</h2>
+          <div className={styles.iconGroup}>
+            <hr />
+            <div className={styles.iconRow}>
+              {logosOne.map((logo, index) => {
+                return (
+                  <div className={styles.logoItem} key={index}>
+                    <div className={styles.iconSquare}>
+                      <Image src={logo.img} />
+                    </div>
+                    <p className={styles.logoCap}>{logo.txt} </p>
                   </div>
-                  <p className={styles.logoCap}>{logo.txt} </p>
-                </div>
-              );
-            })}
-          </div>
-          <div className={styles.iconRow}>
-            {logosTwo.map((logo, index) => {
-              return (
-                <div className={styles.logoItem} key={index}>
-                  <div className={styles.iconSquare}>
-                    <Image src={logo.img} />
+                );
+              })}
+            </div>
+            <div className={styles.iconRow}>
+              {logosTwo.map((logo, index) => {
+                return (
+                  <div className={styles.logoItem} key={index}>
+                    <div className={styles.iconSquare}>
+                      <Image src={logo.img} />
+                    </div>
+                    <p className={styles.logoCap}>{logo.txt} </p>
                   </div>
-                  <p className={styles.logoCap}>{logo.txt} </p>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
-      <div className={styles.nameIntro}>
-        <p className={styles.headingStr}>Hi, I am</p>
-        <h1 className={styles.headingMain}>CHAN ALSTON</h1>
-      </div>
-    </article>
+        <div className={styles.nameIntro}>
+          <p className={styles.headingStr}>Hi, I am</p>
+          <h1 className={styles.headingMain}>CHAN ALSTON</h1>
+        </div>
+      </article>
+      <hr style={{ width: "80%", padding: "0 60px 0 60px" }} />
+    </>
   );
 }

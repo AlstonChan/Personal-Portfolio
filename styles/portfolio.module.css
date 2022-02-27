@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+.portfolio {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 1100px;
+}
+
+.container {
+  margin: 0 50px;
+}
+
+.para {
+  text-indent: 3rem;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  .para {
+    text-indent: 2rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .para {
+    text-indent: 1.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}

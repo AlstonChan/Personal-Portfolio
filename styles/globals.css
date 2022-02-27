@@ -84,3 +84,9 @@ body {
   font-size: 2rem;
   color: #1fd5e6;
 }
+
+@media screen and (max-width: 1180px) {
+  .backContainer {
+    background-image: url("../public/witcher2.jpg");
+  }
+}
